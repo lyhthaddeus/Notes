@@ -154,7 +154,7 @@ eg -6.5 <br>
 &emsp;&emsp; sign: 1 <br>
 &emsp;&emsp; 0110.10 -> 1.101 * 2<sup>2</sup> <br> 
 &emsp;&emsp; exponent: 2 <br>
-&emsp;&emsp; matissa: 101 -> 101 0000 0000 0000 0000 0000 (23bits)
+&emsp;&emsp; matissa: 101 -> 101 0000 0000 0000 0000 0000 (23bits) <br>
 &emsp;&emsp; All together: 1 1000 0001 101 0000 0000 0000 0000 0000 -> <br>
 &emsp;&emsp; 1100 0000 1101 0000 0000 0000 0000 0000 <br> 
-&emsp;&emsp; 0xC0D00000
+&emsp;&emsp; 0xC0D00000 <br>
