@@ -50,8 +50,8 @@ eg 10000100 -> 1 000 0100 -> -4
 2. if sign is positive ? do nothing :D 
 3. else: flip all the bits 
 
-eg  (14)*10* = (0000 1110)*2* = (0000 1110)*1s* <br>
-    (-69)*10* = -(0100 0101)*2*  (1011 1010)*1s* <br>
+eg  &ensp(14)<sub>10<sub> = (0000 1110)<sub>2<sub> = (0000 1110)<sub>1s<sub> <br>
+    &emsp(-69)<sub>10<sub> = -(0100 0101)<sub>2<sub>  (1011 1010)<sub>1s<sub> <br>
 
 # 2s Complement
 
@@ -72,7 +72,14 @@ eg  (14)*10* = (0000 1110)*2* = (0000 1110)*1s* <br>
 > starting from LSB copy everything until a 1 is encountered.
 > copy that specific one then flip everything else
 
-eg  (14)*10* = (0000 1110)*2* = (0000 1110)*2s* <br>
-    (-69)*10* = -(0100 0101)*2*  (1011 1011)*2s* <br>
+eg  &ensp(14)<sub>10<sub> = (0000 1110)<sub>2<sub> = (0000 1110)<sub>2s<sub> <br>
+    &emsp(-69)<sub>10<sub> = -(0100 0101)<sub>2<sub>  (1011 1011)<sub>2s<sub> <br>
+
+> [!Question]
+> But why do we need 1s and 2s complement? the reason is so that we can 
+> quickly perform addition. subtraction is hard for computers, so we instead
+> do subtraction by means of adding a negative value. 1s and 2s complement
+> allow us to perform these.
+> A - B = A + (-B)
 
 
