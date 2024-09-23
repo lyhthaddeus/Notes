@@ -40,6 +40,7 @@ eg 10000100 -> 1 000 0100 -> -4
 * Zeros:
     * 0000 0000: +0
     * 1111 1111: -0
+* Range: -127 -> +127
 
 > [!NOTE]
 > The MSB here still represents the sign 
@@ -49,6 +50,29 @@ eg 10000100 -> 1 000 0100 -> -4
 2. if sign is positive ? do nothing :D 
 3. else: flip all the bits 
 
-eg  (14)*10* = (0000 1110)*2* = (0000 1110)*1s*
-    (-69)*10* = -(0100 0101)*2* = (1011 1010)*1s*
+eg  (14)~10~ = (0000 1110)~2~ = (0000 1110)~1s~
+    (-69)~10~ = -(0100 0101)~2~  (1011 1010)~1s~
+
+# 2s Complement
+
+* Largest Value: 0111 1111 = +127
+* Smallest Value: 1000 0000 = -127
+* Zeros:
+    * 0000 0000: +0
+* Range: -128 -> +127
+
+### Converting from base 10 
+1. write the base 10 into binary
+2. if sign is positive ? do nothing :D 
+3. else: flip all the bits
+4. add 1 to the resultant binary
+
+> [!TIP]
+> You dont actually have to do it the long way a short cut would be: 
+> starting from LSB copy everything until a 1 is encountered.
+> copy that specific one then flip everything else
+
+eg  (14)~10~ = (0000 1110)~2~ = (0000 1110)~2s~
+    (-69)~10~ = -(0100 0101)~2~  (1011 1011)~2s~
+
 
