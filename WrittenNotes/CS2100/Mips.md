@@ -45,7 +45,8 @@ add $8, $9, $10 (add 9 and 10 then store to 8) <br>
 | rt | 10 | 
 | rd | 8 | 
 | shamt | 0 | 
-| funct | 32(greensheet) |
+| funct | 32(greensheet) | 
+
 results: 000000 01001 01010 01000 00000 100000 <br>
 
 conversion: 0000 0001 0010 1010 0100 0000 0010 0000 <br>
@@ -60,7 +61,8 @@ sll $8, $9, 4
 | rt | 9 | 
 | rd | 8 | 
 | shamt | 4 | 
-| funct | 0(greensheet) |
+| funct | 0(greensheet) | 
+
 results: 000000 00000 01001 01000 00100 000000 <br>
 
 conversion: 0000 0000 0000 1001 0100 0001 0000 0000<br>
@@ -96,6 +98,7 @@ addi $21, $22 , -50
 | rs | 22 | 
 | rt | 21 | 
 | immediate | -50 |
+
 results: 001000 10110 10101 (1111 1111 1100 1110)<sub>2s</sub> <br> 
 
 conversion: 0010 0010 1101 0101 1111 1111 1100 1110 <br> 
@@ -109,6 +112,7 @@ lw $9, 12($8)
 | rs | 8 | 
 | rt | 9 | 
 | immediate | 12 |
+
 results: 100011 01000 01001 (0000 0000 0000 1100)<sub>2s</sub> <br>
 
 conversion: 1000 1101 0000 1001 0000 0000 0000 1100 <br>
