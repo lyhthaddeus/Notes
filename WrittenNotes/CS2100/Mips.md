@@ -1,4 +1,18 @@
 # MIPS
+There are 32 registers in a MIPS assembly language <br>
+| Name | Register Number | Usaage | 
+| - | - | - |
+| $zero | 0 | constant 0 | 
+| $v0 - $v1 | 2-3 | values for results and expression evals | 
+| $a0 - $a3 | 4-7 | arguments | 
+| $t0 - $t7 | 8-15 | temp | 
+| $s0 - $s7 | 16-23 | program variables | 
+| $t8 - $t9 | 24-25 | more temps | 
+| $gp | 28 | Global pointer | 
+| $sp | 29 | stack pointer | 
+| $fp | 30 | frame pointer | 
+| $ra | 31 | return address | 
+
 All instruction in Mips has a fixed length of 32 bits
 and they come in three different formats
 * R format(Register format): for instructions with 2 src and1 dest
@@ -9,7 +23,7 @@ and they come in three different formats
 > later you will see rs, rt and rd. to avoid being confused
 > they each respectively stand for src, targ, dest.
 
-### R format
+### R format (Register)
 | 6 | 5 | 5 | 5 | 5 | 6 |
 | - | - | - | - | - | - | 
 | opcode | rs | rt | rd | shamt | funct | 
@@ -68,7 +82,7 @@ results: 000000 00000 01001 01000 00100 000000 <br>
 conversion: 0000 0000 0000 1001 0100 0001 0000 0000<br>
 => 0x00094100 <br>
 
-### I format
+### I format (Immediate)
 used for all instruction that require a immediate.
 | 6 | 5 | 5 | 16 | 
 | - | - | - | - |
@@ -145,7 +159,7 @@ results: 000100 01001 00000 (0000 0000 0000 0011)<sub>2s</sub> <br>
 conversion: 0001 0001 0010 0000 0000 0000 0000 0011 <br>
 => 0x1120003 <br>
 
-### J format
+### J format (Jump)
 | 6| 26 | 
 | - | - |
 | opcode | target address | 
