@@ -1,6 +1,6 @@
 # ISA
 There are 5 main concepts of the ISA design.
-* Data Storage
+* [Data Storage](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/ISA.md#data-storage) 
 * Memory Adderssing Mode
 * Operations in the instruction sets
 * Instruction format
