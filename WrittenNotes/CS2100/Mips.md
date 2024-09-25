@@ -15,9 +15,9 @@ There are 32 registers in a MIPS assembly language <br>
 
 All instruction in Mips has a fixed length of 32 bits
 and they come in three different formats
-* R format(Register format): for instructions with 2 src and1 dest
-* I format(immediate format): for instruction with 1 src and 1 immediate and 1 dest
-* J format(jump format): uses only 1 immediate 
+* [R format](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/Mips.md#r-format-register)(Register format): for instructions with 2 src and1 dest
+* [I format](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/Mips.md#i-format-immediate)(immediate format): for instruction with 1 src and 1 immediate and 1 dest
+* [J format](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/Mips.md#j-format-jump)(jump format): uses only 1 immediate 
 
 > [!TIP]
 > later you will see rs, rt and rd. to avoid being confused
