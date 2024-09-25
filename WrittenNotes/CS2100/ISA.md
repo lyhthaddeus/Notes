@@ -6,7 +6,7 @@ There are 5 main concepts of the ISA design.
 * [Instruction format](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/ISA.md#instruction-format) 
 * [Encoding the instruction set](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/ISA.md#encoding-the-instruction-set) 
 
-# RISC vs CISC
+## RISC vs CISC
 ### Complex Instruction Set Computer
 Example: x86-32 <br> 
 * Single instruction performs complext operations 
@@ -51,6 +51,33 @@ All operands are read from memory: DEC VAX <br>
 there is no use of registers, operans are taken from memory directly
 
 # Memory Addressing Mode
+There are three lines that connects the processors to the memory (*assume k-bit is 32*)
+* k-bit address bus (32 bits)
+    * stores the address
+    * Uni-directional (processor => memory)
+* n-bit data bus
+    * stores the data 
+    * Bi-directional
+* control line
+    * Controls whether the operation is a Read/ Write process 
+
+### Process of Addressing
+For **read**  access
+1. processor place the respective address to address bus
+2. set control line to read
+3. data at that specific address is place in data bus
+4. then data will be read via the data bus 
+
+For **write** access
+1. processor place the respective address to address bus
+2. set control line to write
+3. the data in the memory data register will then be written to the address 
+
+> [!TIP]
+> The ooga booga version is. data register tell you who you are 
+> address register tell you where you are. control tell you what to do. 
+> In the famous words of El-Melloi, Whodunnit, Wheredunnit, Whydunnit
+> busses are just "pipes" for data transfer
 
 # Operations In The Instruction Sets
 
