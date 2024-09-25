@@ -92,9 +92,22 @@ the relative order of bytes in a multi byte word stored.
 > [!NOTE]
 > MIPs uses Register, Immediate and Displacement
 
-
 # Operations In The Instruction Sets
+Nothing much here. Just make sure your architecture caters to the more common 
+instructions. Most frequently used instructon are (Load, Conditional Branch, Comapre and Store)
 
 # Instruction Format
+You have to consider two aspect of the instruction set
+* Instruction Length
+    * Variable Length: Intel 80x86 (var from 1 t 17 bytes)
+        * Allow for more flexibility in instruction set
+        * Usually used in CISC 
+    * Fixed Length: MIPs
+        * Simplify pipelining and parallelism
+        * Allow fro easy fetch and decode
+
+* Instruciton Field (Type and size of operand)
+    * opcode (unique identifier)
+    * operands (zero or more additional information required)
 
 # Encoding The Instruction Set
