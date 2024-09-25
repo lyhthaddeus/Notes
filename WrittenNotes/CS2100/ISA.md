@@ -1,7 +1,7 @@
 # ISA
 There are 5 main concepts of the ISA design.
 * [Data Storage](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/ISA.md#data-storage) 
-* [Memory Adderssing Mode](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/ISA.md#memory-addressing-mode) 
+* [Memory Addressing Mode](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/ISA.md#memory-addressing-mode) 
 * [Operations in the instruction sets](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/ISA.md#operations-in-the-instruction-sets) 
 * [Instruction format](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/ISA.md#instruction-format) 
 * [Encoding the instruction set](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/ISA.md#encoding-the-instruction-set) 
@@ -78,6 +78,19 @@ For **write** access
 > address register tell you where you are. control tell you what to do. 
 > In the famous words of El-Melloi, Whodunnit, Wheredunnit, Whydunnit
 > busses are just "pipes" for data transfer
+
+### Endianness (lol Indian)
+the relative order of bytes in a multi byte word stored.
+* (high -> low): MSB -> LSB (Big-Endian)
+    * MIPs/ IBM 360/ Motorola 68000
+* (high -> low): LSB -> MSB (Little-Endian)
+    * Intel 80x86/ DEC VAX
+
+### Addressing Mode
+> [!TIP]
+> Its a large table i lazy to copy, put it in the cheat sheat
+> MIPs uses Register, Immediate and Displacement
+
 
 # Operations In The Instruction Sets
 
