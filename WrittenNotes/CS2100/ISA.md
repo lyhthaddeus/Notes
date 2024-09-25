@@ -87,8 +87,9 @@ the relative order of bytes in a multi byte word stored.
     * Intel 80x86/ DEC VAX
 
 ### Addressing Mode
-> [!TIP]
-> Its a large table i lazy to copy, put it in the cheat sheat
+![Addressing Mode](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/Addressing%20Mode.png) 
+
+> [!NOTE]
 > MIPs uses Register, Immediate and Displacement
 
 
