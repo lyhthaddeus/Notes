@@ -15,15 +15,15 @@ There are 32 registers in a MIPS assembly language <br>
 
 All instruction in Mips has a fixed length of 32 bits
 and they come in three different formats
-* R format(Register format): for instructions with 2 src and1 dest
-* I format(immediate format): for instruction with 1 src and 1 immediate and 1 dest
-* J format(jump format): uses only 1 immediate 
+* [R format](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/Mips.md#r-format-register)(Register format): for instructions with 2 src and1 dest
+* [I format](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/Mips.md#i-format-immediate)(immediate format): for instruction with 1 src and 1 immediate and 1 dest
+* [J format](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/Mips.md#j-format-jump)(jump format): uses only 1 immediate 
 
 > [!TIP]
 > later you will see rs, rt and rd. to avoid being confused
 > they each respectively stand for src, targ, dest.
 
-### R format (Register)
+# R format (Register)
 | 6 | 5 | 5 | 5 | 5 | 6 |
 | - | - | - | - | - | - | 
 | opcode | rs | rt | rd | shamt | funct | 
@@ -37,7 +37,7 @@ what kind of instruction is from the func)
 > enough to represent all. Similarly for shamt, shifting
 > 32 bits in any direction clears the register
 
-#### Encoding R format 
+### Encoding R format 
 1. notice your Mips instruction are always in form that
 dest comes right after instruction name
 2. opcode is trivally 0, your funct is obtained from green sheet
@@ -82,7 +82,7 @@ results: 000000 00000 01001 01000 00100 000000 <br>
 conversion: 0000 0000 0000 1001 0100 0001 0000 0000<br>
 => 0x00094100 <br>
 
-### I format (Immediate)
+# I format (Immediate)
 used for all instruction that require a immediate.
 | 6 | 5 | 5 | 16 | 
 | - | - | - | - |
@@ -95,7 +95,7 @@ used for all instruction that require a immediate.
 > unlike in R where everything is unsigned, the immediate is 
 > signed int in 2s complement
 
-#### Encoding I format
+### Encoding I format
 1. notice that similar to R format, the target comes right
 after the instruction name (swapping required) except for 
 branch
@@ -159,7 +159,7 @@ results: 000100 01001 00000 (0000 0000 0000 0011)<sub>2s</sub> <br>
 conversion: 0001 0001 0010 0000 0000 0000 0000 0011 <br>
 => 0x1120003 <br>
 
-### J format (Jump)
+# J format (Jump)
 | 6| 26 | 
 | - | - |
 | opcode | target address | 
@@ -168,7 +168,7 @@ conversion: 0001 0001 0010 0000 0000 0000 0000 0011 <br>
 > the address here is similar to branch address that it is word aligned, we can 
 > count in words instead of bytes (last 2 digits are 00 always).
 
-#### Encoding J format
+### Encoding J format
 1. find the opcode from greensheet
 2. get the address to be jump towards, omit the last 2 digits (00)
 3. copy all  28 bits
