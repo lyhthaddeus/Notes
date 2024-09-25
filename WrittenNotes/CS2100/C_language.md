@@ -60,7 +60,7 @@ int main (void) {
 | << | left shift | 
 | >> | right shift | 
 
-### Pointer :(
+# Pointer :(
 * int *p: means pointer called p that point to some int
 * &i: address value of variable i  
 * *p = i: reassign the variable p was pointing to to i 
@@ -71,7 +71,7 @@ int main (void) {
 > arr[0], *arr: both returns element at index 0
 > arr, &arr: address of the first element
 
-### Arrays and Strings
+# Arrays and Strings
 ```c
 #define N 10
 int source[N] = {1,2,3,4,5};
@@ -91,7 +91,7 @@ str2[0] = 'h'; //ILLEGAL!!
 > Similar to how you cannot reassign an arr name, **String literals are immutable**, remember
 > string in c are just char arrays ending with '\0', declaring it as a literal makes it constant
 
-### Structures
+# Structures
 ```c
 typedef struct {
     int length, width, height;
@@ -113,4 +113,4 @@ printf("%d\n", user1.nestedName.height); //prints 20
 > in a function as we receive the pointer <br>
 > foo(struck_t *struck_ptr) <br>
 > strcpy((*struck_ptr).waifi, "罗睺is my wife") <br>
-> *can be shorten to struck->waifu* 
+> *can be shorten to struck->waifu* (arrow operator) 
