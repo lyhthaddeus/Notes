@@ -11,11 +11,20 @@ A Process is identified by (IP address, port number). the port number is a 16 bi
 Socket is the software interface between app processes and transort layer protocol.
 Programming wise can be treated as a set of APIs. There are two types of Sockets
 * UDP: reliable, byte stream-oriented socket
+    * uses **one socket** to server all clinets
+    * **no connection** is establised before sending data 
+    * Sender explicitly attaches **destination IP address + port #** 
 * TCP: unreliable datagram socket
+    * Server creates a new socket for each client
+    * Client establishes a handshake/ **connection** to server 
+    * server uses the **connection** to identify the client  
+
+> [!TIP]
+> Conceptually, you can treat a socket = IP Address + port number 
 
 # UDP
 1. server listen to port 53 
-2. client 1 send packet to server (explicityly attaches destination IP address and 
+2. client 1 send packet to server (explicitly attaches destination IP address and 
 port number to **EACH** packet)
 3. server extracts the sender IP address and port number from the packets
 
