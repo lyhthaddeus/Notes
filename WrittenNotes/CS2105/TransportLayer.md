@@ -5,6 +5,17 @@
 * [UDP](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2105/TransportLayer.md#udp)
 * [TCP](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2105/TransportLayer.md#tcp)
 
+### Jargons
+* packet: generic term to refer to any data being transported
+* message: data at the application layer 
+* segment: data at the transport layer 
+* datagram: data at the network layer 
+* frame: data at the link layer
+
+> [!NOTE]
+> They all mean the same thing but differ in their header. at each step of the process,
+> each layer will append thier unique header to the data
+
 # DNS (Domain Name System)
 There are two ways to identify a host
 * Hostname
@@ -57,11 +68,13 @@ Programming wise can be treated as a set of APIs. There are two types of Sockets
 * UDP: reliable, byte stream-oriented socket
     * uses **one socket** to server all clinets
     * **no connection** is establised before sending data 
-    * Sender explicitly attaches **destination IP address + port #** 
+    * Sender explicitly attaches **destination IP address + port #**
+    * one to many
 * TCP: unreliable datagram socket
     * Server creates a new socket for each client
     * Client establishes a handshake/ **connection** to server 
     * server uses the **connection** to identify the client  
+    * one to one
 
 > [!TIP]
 > Conceptually, you can treat a socket = IP Address + port number 
@@ -71,6 +84,14 @@ Programming wise can be treated as a set of APIs. There are two types of Sockets
 2. client 1 send packet to server (explicitly attaches destination IP address and 
 port number to **EACH** packet)
 3. server extracts the sender IP address and port number from the packets
+
+UDP adds very little service on top of IP:
+* Multiplexing at send: gathers data from processess, froms packets and passes them to IP 
+* De-multiplexing at receiver: receives pakcets from lower layer and dispatches them to the right processes
+* Checksum
+
+> [!NOTE]
+> UDP transmission is **unrealiable** as it will not attempt to re-transmit the data 
 
 ### UDP Echo Server
 ```python
