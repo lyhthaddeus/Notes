@@ -1,9 +1,9 @@
 # Transport layer
-* DNS
-* Addressing Process
-* Socket
-* UDP
-* TCP
+* [DNS](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2105/TransportLayer.md#dns-domain-name-system) 
+* [Addressing Process](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2105/TransportLayer.md#addressing-processes)
+* [Socket](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2105/TransportLayer.md#sockets)
+* [UDP](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2105/TransportLayer.md#udp)
+* [TCP](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2105/TransportLayer.md#tcp)
 
 # DNS (Domain Name System)
 There are two ways to identify a host
