@@ -111,3 +111,6 @@ You have to consider two aspect of the instruction set
     * operands (zero or more additional information required)
 
 # Encoding The Instruction Set
+* no time to write its just max min shit.
+    * to maximise, give least restrictive the most ops, most restrictive less
+    * to minimise, give the most restrictive the most ops, least restrictive less
