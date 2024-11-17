@@ -79,7 +79,7 @@ For **write** access
 > In the famous words of El-Melloi, Whodunnit, Wheredunnit, Whydunnit
 > busses are just "pipes" for data transfer
 
-### Endianness (lol Indian)
+### Endianness
 the relative order of bytes in a multi byte word stored.
 * (high -> low): MSB -> LSB (Big-Endian)
     * MIPs/ IBM 360/ Motorola 68000
