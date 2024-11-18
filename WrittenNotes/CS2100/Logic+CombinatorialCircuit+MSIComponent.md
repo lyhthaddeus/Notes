@@ -71,13 +71,19 @@ Just know it takes in A3A2A1A0 and B3B2B1B0 and compare which is greater
 Here are even more block diagrams... yay..
 
 ### 3x8 Decoders
+![Decoder](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/Decoder.pnghttps://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/DecoderWithEnable.png) 
 
 ### 2x4 Decoder with Enable
+![DecoderWithEnable](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/DecoderWithEnable.png) 
 
 ### 8x3 Encoders
+![Encoder](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/Encoder.png) 
 
 ### 4x2 Priority Encoders
+![prioEncoder](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/PriorityEncoder.png) 
 
 ### 4x1 Multiplexer
+![mult](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/Multiplexer.png) 
 
 ### 1x4 Demultiplexer
+![demult](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/Demultiplexer.png) 
