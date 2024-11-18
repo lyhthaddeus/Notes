@@ -71,7 +71,7 @@ Just know it takes in A3A2A1A0 and B3B2B1B0 and compare which is greater
 Here are even more block diagrams... yay..
 
 ### 3x8 Decoders
-![Decoder](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/Decoder.pnghttps://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/DecoderWithEnable.png) 
+![Decoder](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/Decoder.png) 
 
 ### 2x4 Decoder with Enable
 ![DecoderWithEnable](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/DecoderWithEnable.png) 
