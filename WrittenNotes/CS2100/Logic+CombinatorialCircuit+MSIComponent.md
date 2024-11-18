@@ -19,5 +19,5 @@ etc etc. notice how each step only require one bit to be flip as opposed to trad
 * Its a systematic method to obtain simplified SOP expression
 * fun fact this is classified as an abstract form of a Venn Diagram organised as a matrix of squares
 
-![PreferedKMap]()
-![ValidGroupings]() 
+![PreferedKMap](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/PreferedKMap.jpg)
+![ValidGroupings](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/ValidGroupings.png) 
