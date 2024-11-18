@@ -66,3 +66,18 @@ Just know it takes in A3A2A1A0 and B3B2B1B0 and compare which is greater
 
 ### 6 Person Voting System (idk wtf this for)
 ![SNAFU](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/6PersonVotingSystem.png)
+
+# MSI Components
+Here are even more block diagrams... yay..
+
+### 3x8 Decoders
+
+### 2x4 Decoder with Enable
+
+### 8x3 Encoders
+
+### 4x2 Priority Encoders
+
+### 4x1 Multiplexer
+
+### 1x4 Demultiplexer
