@@ -21,7 +21,8 @@ Its literally just the Big diagram :)
 
 ### ALU CLoser Look
 
-![ALU](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/ALU.png)
+![ALU](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/ALU.png) <br>
+
 As seen in the table. the ALUcontrol quite literally is broken apart into three sections to help 
 with the math <br>
 
