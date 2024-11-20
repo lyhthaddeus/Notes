@@ -23,6 +23,7 @@ There are **5** Execution stage
     * Execution time for I instructions => (I + N - 1) * CT<sub>pipeline</sub>
 
 $$\text{Speedup}_{\text{pipeline}} = \frac{\text{Time}_{\text{seq}}}{\text{Time}_{\text{pipeline}}}$$
+$\sqrt{3x-1}+(1+x)^2$ <br>
 
 
 
