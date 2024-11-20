@@ -22,10 +22,42 @@ There are **5** Execution stage
     * **IN IDEAL SCENARIO** cycle require for I instructions = I + N - 1 (require N-1 cycle to fill the pipeline)
     * Execution time for I instructions => (I + N - 1) * CT<sub>pipeline</sub>
 
+> [!NOTE]
+> in an ideal world, Speedup_pipeline = Time_seq / Time_pipeline ≈ N 
+> However our world is far from ideal
 
-$\sqrt{3x-1}+(1+x)^2$ <br>
-$\text{Speedup}_{\text{pipeline}} = \frac{\text{Time}_{\text{seq}}}{\text{Time}_{\text{pipeline}}}$
-$$\text{Speedup}_{\text{pipeline}} = \frac{\text{Time}_{\text{seq}}}{\text{Time}_{\text{pipeline}}}$$
-$$
-\text{Speedup}_{\text{pipeline}} = \frac{\text{Time}_{\text{seq}}}{\text{Time}_{\text{pipeline}}}
-$$
+### Pipeline Hazards
+Our ideal pipeline works on the hope and dreams assumption that a new instruction 
+can be 'pumped' into pipeline every cycle (aka no delays). However that is not true as there are pipeline Hazards
+* Stuctural Hazards (simultaneous use of hardware resource)
+* Data Hazards (data dependencies between instructions)
+* Control Hazards (Change in program flow like in branch)
+
+we will discuss some possible solutions and limitations
+
+### Structural Hazards 
+This is the most striaght forward fix 
+* Stall the Pipeline (delay to "wait for your turn")
+* Seperate the hardware for Data and Instruction Memory to avoid the clash
+* Split cycle into half (first half write; second half read)
+    * this is only possible bc register are fast
+
+### Data Hazards
+One of the main reason data hazards occur is due to **Instruction Dependencies** such as 
+RAW (Read after Write), WAW (Write after Write), WAR (Write after Read) <br>
+
+![TrueDataDependency](path) 
+
+Solution: **Forwarding**: forward the result from one stage to anther and bypass data read from register file <br>
+
+![Forwarding](path) 
+
+> [!TIP]
+> The logic for forward lies in the fact that the data has already been calculated (just not written to register yet)
+> instead of waiting for the WB stage, we just take it from the previous stage directly.
+
+![LOADForwarding](path) 
+
+> [!CAUTION]
+> Forwarding **CANNOT** be used as a solution for lw as load instructions only get the data after MEM stage 
+> to solve this we have no choice but to stall the pipeline then forward after the MEM stage
