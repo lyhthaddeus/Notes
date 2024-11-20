@@ -22,7 +22,7 @@ There are **5** Execution stage
     * **IN IDEAL SCENARIO** cycle require for I instructions = I + N - 1 (require N-1 cycle to fill the pipeline)
     * Execution time for I instructions => (I + N - 1) * CT<sub>pipeline</sub>
 
-$$\text{Speedup}_{\text{pipeline}} = \frac{\text{Time}_{\text{seq}}}{\text{Time}_{\text{pipeline}}}$$
+$$ \text{Speedup}_{\text{pipeline}} = \frac{\text{Time}_{\text{seq}}}{\text{Time}_{\text{pipeline}}} $$
 
 
 
