@@ -133,4 +133,9 @@ Lastly theres the memory cell, they come in two types
 * Dynamic RAM (uses capacitors charges to represent data) 
 
 we string a bunch of them together to form memory arrays
-!
+
+4x3 Memory Array <br>
+![4x3Ram](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/4x3Ram.png) <br>
+
+4k x 8 Memory Array <br>
+![4kx8Ram](https://github.com/lyhthaddeus/Notes/blob/main/WrittenNotes/CS2100/comp/4Kx8Ram.png) <br> 
